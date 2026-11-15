@@ -1,4 +1,3 @@
-
 <!DOCTYPE html>
 <html lang="es">
 <head>
@@ -29,9 +28,7 @@
             box-sizing: border-box;
         }
 
-        html {
-            scroll-behavior: smooth;
-        }
+        html { scroll-behavior: smooth; }
 
         body {
             font-family: 'Poppins', sans-serif;
@@ -89,9 +86,7 @@
             text-shadow: 4px 5px 0 rgba(0,0,0,.4);
         }
 
-        h1 span {
-            color: var(--yellow);
-        }
+        h1 span { color: var(--yellow); }
 
         .hero-content p {
             font-size: 1.1rem;
@@ -167,117 +162,93 @@
             margin-top: 8px;
         }
 
-        
-/* MENÚ SOBRE EL TROMPO */
-.menu-grid {
-    display: grid;
-    grid-template-columns: 1fr;
-    gap: 35px;
-}
+        /* MENÚ */
+        .menu-grid {
+            display: grid;
+            grid-template-columns: 1fr;
+            gap: 35px;
+        }
 
-.menu-section {
-    position: relative;
-    overflow: hidden;
-    padding: 35px;
-    border-radius: 18px;
-    background:
-        linear-gradient(rgba(31, 15, 8, .88), rgba(31, 15, 8, .94)),
-        url('https://images.unsplash.com/photo-1529006557810-274b9b2fc783?auto=format&fit=crop&w=1600&q=85') center/cover;
-    border: 5px solid #8a512b;
-    box-shadow:
-        0 12px 30px rgba(0,0,0,.25),
-        inset 0 0 20px rgba(0,0,0,.5);
-    color: #fff4df;
-    transition: .3s;
-}
+        .menu-section {
+            position: relative;
+            overflow: hidden;
+            padding: 35px;
+            border-radius: 18px;
+            background:
+                linear-gradient(rgba(31, 15, 8, .88), rgba(31, 15, 8, .94)),
+                url('https://images.unsplash.com/photo-1529006557810-274b9b2fc783?auto=format&fit=crop&w=1600&q=85') center/cover;
+            border: 5px solid #8a512b;
+            box-shadow: 0 12px 30px rgba(0,0,0,.25), inset 0 0 20px rgba(0,0,0,.5);
+            color: #fff4df;
+            transition: .3s;
+        }
 
-.menu-section:hover {
-    transform: translateY(-5px);
-    box-shadow: 0 18px 35px rgba(0,0,0,.3);
-}
+        .menu-section:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 18px 35px rgba(0,0,0,.3);
+        }
 
-.menu-heading {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    gap: 15px;
-    padding-bottom: 22px;
-    margin-bottom: 20px;
-    border-bottom: 2px dashed #bd8245;
-}
+        .menu-heading {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 15px;
+            padding-bottom: 22px;
+            margin-bottom: 20px;
+            border-bottom: 2px dashed #bd8245;
+        }
 
-.menu-icon {
-    font-size: 2.5rem;
-}
+        .menu-icon { font-size: 2.5rem; }
 
-.menu-heading h3 {
-    font-family: 'Oswald', sans-serif;
-    font-size: 2.5rem;
-    text-transform: uppercase;
-    color: #ffc928;
-    letter-spacing: 2px;
-}
+        .menu-heading h3 {
+            font-family: 'Oswald', sans-serif;
+            font-size: 2.5rem;
+            text-transform: uppercase;
+            color: #ffc928;
+            letter-spacing: 2px;
+        }
 
-.menu-item {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    gap: 15px;
-    padding: 17px 12px;
-    margin-bottom: 8px;
-    background: rgba(255,255,255,.055);
-    border-radius: 10px;
-    border-left: 3px solid #e63924;
-    transition: .25s;
-}
+        .menu-item {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            gap: 15px;
+            padding: 17px 12px;
+            margin-bottom: 8px;
+            background: rgba(255,255,255,.055);
+            border-radius: 10px;
+            border-left: 3px solid #e63924;
+            transition: .25s;
+        }
 
-.menu-item:hover {
-    background: rgba(255,201,40,.13);
-    transform: translateX(5px);
-}
+        .menu-item:hover {
+            background: rgba(255,201,40,.13);
+            transform: translateX(5px);
+        }
 
-.item-name {
-    color: #fff4df;
-    font-size: 1.08rem;
-    font-weight: 700;
-}
+        .item-name {
+            color: #fff4df;
+            font-size: 1.08rem;
+            font-weight: 700;
+        }
 
-.item-desc {
-    display: block;
-    color: #d1b99e;
-    font-size: .8rem;
-    margin-top: 5px;
-}
+        .item-desc {
+            display: block;
+            color: #d1b99e;
+            font-size: .8rem;
+            margin-top: 5px;
+        }
 
-.price {
-    background: #e63924;
-    color: white;
-    font-weight: 800;
-    font-size: 1rem;
-    padding: 9px 16px;
-    border-radius: 7px;
-    box-shadow: 0 3px 8px rgba(0,0,0,.3);
-    white-space: nowrap;
-}
-
-@media (max-width: 600px) {
-    .menu-section {
-        padding: 22px 15px;
-    }
-
-    .menu-heading h3 {
-        font-size: 2rem;
-    }
-
-    .item-name {
-        font-size: .95rem;
-    }
-
-    .menu-item {
-        padding: 14px 8px;
-    }
-}
-
+        .price {
+            background: #e63924;
+            color: white;
+            font-weight: 800;
+            font-size: 1rem;
+            padding: 9px 16px;
+            border-radius: 7px;
+            box-shadow: 0 3px 8px rgba(0,0,0,.3);
+            white-space: nowrap;
+        }
 
         /* BANNER */
         .flavor-banner {
@@ -297,131 +268,9 @@
             text-transform: uppercase;
         }
 
-        .flavor-banner p {
-            margin-top: 10px;
-            color: #ffe6df;
-        }
+        .flavor-banner p { margin-top: 10px; color: #ffe6df; }
 
-        /* HORARIOS */
-        .hours {
-            margin-top: 65px;
-            background: var(--black);
-            color: white;
-            border-radius: 20px;
-            padding: 45px 25px;
-            text-align: center;
-            position: relative;
-            overflow: hidden;
-        }
-
-        .hours::after {
-            content: "🌮";
-            position: absolute;
-            font-size: 130px;
-            opacity: .06;
-            right: 20px;
-            bottom: -30px;
-            transform: rotate(-20deg);
-        }
-
-        .hours h2 {
-            font-family: 'Oswald', sans-serif;
-            font-size: 2.5rem;
-            color: var(--yellow);
-            text-transform: uppercase;
-            margin-bottom: 20px;
-        }
-
-        .hours p {
-            font-size: 1.1rem;
-            margin: 10px;
-        }
-
-        .schedule {
-            display: inline-block;
-            background: #303030;
-            border: 1px solid #444;
-            padding: 15px 30px;
-            border-radius: 12px;
-            margin-top: 10px;
-        }
-
-        .schedule strong {
-            color: var(--yellow);
-            font-size: 1.4rem;
-        }
-
-        .closed {
-            color: #ff6659;
-            font-weight: 800;
-            margin-top: 20px !important;
-            text-transform: uppercase;
-            letter-spacing: 1px;
-        }
-
-        /* FOOTER */
-        footer {
-            background: #101010;
-            color: #999;
-            text-align: center;
-            padding: 30px 15px;
-            font-size: .85rem;
-        }
-
-        footer strong {
-            color: var(--yellow);
-        }
-
-        footer .motto {
-            margin-top: 8px;
-            color: white;
-            font-weight: 600;
-        }
-
-        /* ANIMACIONES */
-        @keyframes appear {
-            from {
-                opacity: 0;
-                transform: translateY(25px);
-            }
-            to {
-                opacity: 1;
-                transform: translateY(0);
-            }
-        }
-
-        /* RESPONSIVE */
-        @media (max-width: 700px) {
-            header {
-                min-height: 370px;
-            }
-
-            .menu-grid {
-                grid-template-columns: 1fr;
-            }
-
-            .container {
-                padding: 45px 16px;
-            }
-
-            .section-title h2 {
-                font-size: 2.4rem;
-            }
-
-            .menu-section {
-                padding: 23px 20px;
-            }
-
-            .flavor-banner h2 {
-                font-size: 1.9rem;
-            }
-
-            .hours h2 {
-                font-size: 2rem;
-            }
-        }
-
-        /* ACCIONES, JUEGO, OPINIONES Y UBICACIÓN */
+        /* ACCIONES, JUEGO Y UBICACIÓN */
         .quick-actions {
             display: flex;
             flex-wrap: wrap;
@@ -446,21 +295,33 @@
         .action-btn:hover { transform: translateY(-3px); filter: brightness(1.08); }
         .whatsapp-btn { background: #20bd5a; color: white; }
         .maps-btn { background: var(--yellow); color: #171717; }
+        .services-btn { background: var(--yellow); color: #171717; }
+        
+        .services-card { margin-top: 65px; padding: 38px 28px; border-radius: 20px; background: linear-gradient(135deg, #20351d, #344c28); color: #fff8eb; border: 5px solid #668344; box-shadow: 0 12px 30px rgba(0,0,0,.14); }
+        .services-card h2 { font-family: "Oswald", sans-serif; font-size: 2.5rem; text-transform: uppercase; color: #d9ef9b; text-align: center; margin-bottom: 10px; }
+        .services-lead { text-align: center; color: #e7edda; margin-bottom: 25px; }
+        .services-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(190px, 1fr)); gap: 14px; }
+        .service-item { display: flex; align-items: center; gap: 12px; padding: 17px; background: rgba(255,255,255,.09); border: 1px solid rgba(255,255,255,.13); border-radius: 12px; font-weight: 700; }
+        .service-item span { font-size: 1.8rem; }
+        .avocado-feature { margin: 24px auto 0; max-width: 700px; text-align: center; padding: 18px; border-radius: 14px; background: #d9ef9b; color: #20351d; font-weight: 800; font-size: 1.08rem; }
+
         .extra-section { margin-top: 65px; }
-        .game-card, .feedback-card, .location-card {
+        .game-card, .location-card {
             background: #fff;
             border: 1px solid #eee2d0;
             border-radius: 20px;
             padding: 28px;
             box-shadow: 0 10px 30px rgba(0,0,0,.07);
         }
+        
+        /* MEJORAS DEL JUEGO (CSS) */
         .game-card {
             background: linear-gradient(145deg, #21150f, #3b2114);
             color: #fff4df;
             border: 5px solid #8a512b;
             text-align: center;
         }
-        .game-card h3, .feedback-card h3, .location-card h3 {
+        .game-card h3, .location-card h3 {
             font-family: 'Oswald', sans-serif;
             font-size: 2rem;
             text-transform: uppercase;
@@ -468,60 +329,57 @@
         }
         .game-card h3 { color: var(--yellow); }
         .game-intro { color: #e6cdb2; margin-bottom: 16px; }
+        
         #tacoGame {
             display: block;
             width: 100%;
-            max-width: 720px;
+            max-width: 800px; 
             height: auto;
             margin: 15px auto;
-            background: linear-gradient(#f9d9a2, #f2b96c);
-            border: 3px solid #bd8245;
+            background: transparent;
+            border: 4px solid #bd8245;
             border-radius: 13px;
+            box-shadow: 0 8px 25px rgba(0,0,0,0.5);
             touch-action: manipulation;
+            cursor: pointer;
         }
+        
         .game-hud {
             display: flex;
             justify-content: center;
-            gap: 25px;
+            gap: 30px;
             flex-wrap: wrap;
             font-weight: 700;
-            margin: 10px 0;
+            font-size: 1.1rem;
+            margin: 10px 0 20px;
         }
-        .game-hud strong { color: var(--yellow); }
+        .game-hud strong { color: var(--yellow); font-size: 1.3rem; }
+        
         .game-controls {
             display: flex;
             justify-content: center;
-            gap: 10px;
+            gap: 12px;
             flex-wrap: wrap;
-            margin-top: 12px;
+            margin-top: 15px;
         }
         .game-controls button {
             background: var(--yellow);
             color: #21150f;
             border: 0;
             border-radius: 9px;
-            padding: 11px 19px;
+            padding: 12px 24px;
+            font-size: 1.05rem;
             font-weight: 800;
             cursor: pointer;
+            transition: .2s;
+            text-transform: uppercase;
         }
+        .game-controls button:hover { transform: scale(1.05); }
         .game-controls button.secondary { background: #fff4df; }
-        .game-help { color: #d9c2aa; font-size: .85rem; margin-top: 12px; }
-        .feedback-card { border-top: 6px solid var(--red); }
-        .feedback-card p, .location-card p { color: #777; margin: 8px 0 18px; }
-        .feedback-form { display: grid; gap: 14px; }
-        .feedback-form label { font-weight: 700; font-size: .92rem; }
-        .feedback-form select, .feedback-form textarea, .feedback-form input {
-            width: 100%;
-            padding: 13px 14px;
-            border: 1px solid #ded5c9;
-            border-radius: 9px;
-            font: inherit;
-            background: #fffdf9;
-            color: #222;
-        }
-        .feedback-form textarea { min-height: 115px; resize: vertical; }
-        .feedback-form .action-btn { background: #20bd5a; color: white; }
-        .feedback-note { font-size: .8rem; color: #888; margin-top: 10px; }
+        .game-help { color: #d9c2aa; font-size: .9rem; margin-top: 15px; }
+
+        .location-card p { color: #777; margin: 8px 0 18px; }
+        .location-card { border-top: 6px solid var(--yellow); }
         .map-frame {
             width: 100%;
             height: 330px;
@@ -529,7 +387,64 @@
             border-radius: 14px;
             margin: 12px 0 18px;
         }
-        .location-card { border-top: 6px solid var(--yellow); }
+
+        /* HORARIOS */
+        .hours {
+            margin-top: 65px;
+            background: var(--black);
+            color: white;
+            border-radius: 20px;
+            padding: 45px 25px;
+            text-align: center;
+            position: relative;
+            overflow: hidden;
+        }
+        .hours::after {
+            content: "🌮";
+            position: absolute;
+            font-size: 130px;
+            opacity: .06;
+            right: 20px;
+            bottom: -30px;
+            transform: rotate(-20deg);
+        }
+        .hours h2 {
+            font-family: 'Oswald', sans-serif;
+            font-size: 2.5rem;
+            color: var(--yellow);
+            text-transform: uppercase;
+            margin-bottom: 20px;
+        }
+        .hours p { font-size: 1.1rem; margin: 10px; }
+        .schedule {
+            display: inline-block;
+            background: #303030;
+            border: 1px solid #444;
+            padding: 15px 30px;
+            border-radius: 12px;
+            margin-top: 10px;
+        }
+        .schedule strong { color: var(--yellow); font-size: 1.4rem; }
+        .closed {
+            color: #ff6659;
+            font-weight: 800;
+            margin-top: 20px !important;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+        }
+
+        /* FOOTER */
+        footer {
+            background: #101010;
+            color: #999;
+            text-align: center;
+            padding: 30px 15px;
+            font-size: .85rem;
+        }
+        footer strong { color: var(--yellow); }
+        footer .motto { margin-top: 8px; color: white; font-weight: 600; }
+
+        /* WHATSAPP FLOTANTE */
         .floating-whatsapp {
             position: fixed;
             right: 20px;
@@ -548,12 +463,15 @@
             transition: .25s;
         }
         .floating-whatsapp:hover { transform: scale(1.1); }
-        @media (max-width: 600px) {
-            .game-card, .feedback-card, .location-card { padding: 20px 15px; }
+
+        /* RESPONSIVE */
+        @media (max-width: 700px) {
+            header { min-height: 370px; }
+            .section-title h2 { font-size: 2.4rem; }
+            .game-card, .location-card { padding: 20px 15px; }
             .map-frame { height: 270px; }
             .floating-whatsapp { width: 54px; height: 54px; right: 14px; bottom: 14px; }
         }
-
     </style>
 </head>
 
@@ -562,14 +480,10 @@
     <header>
         <div class="hero-content">
             <span class="tag">🌮 AUTÉNTICO SABOR MEXICANO</span>
-
             <h1>TACOS<br><span>LOS BETO'S</span></h1>
-
             <div class="hero-decoration"></div>
-
             <p>¡El verdadero sabor que conquista!</p>
-            <p>❤️🤍💙 ¡Arriba las Chivas del Guadalajara!</p>
-
+            <p>🐐⚽¡Arriba las Chivas del Guadalajara!⚽🐐</p>
             <a href="#menu" class="hero-button">VER NUESTRO MENÚ ↓</a>
         </div>
     </header>
@@ -579,7 +493,6 @@
     </div>
 
     <main class="container" id="menu">
-
         <div class="section-title">
             <small>HECHOS PARA DISFRUTAR</small>
             <h2>NUESTRO MENÚ</h2>
@@ -587,46 +500,21 @@
         </div>
 
         <div class="menu-grid">
-
             <!-- TACOS -->
             <section class="menu-section">
                 <div class="menu-heading">
                     <div class="menu-icon">🌮</div>
                     <h3>Tacos</h3>
                 </div>
-
+                <div class="menu-item"><span class="item-name">Adobada</span><span class="price">$18</span></div>
                 <div class="menu-item">
-                    <span class="item-name">Adobada</span>
+                    <div><span class="item-name">Res</span><span class="item-desc">Carnaza, Aldilla</span></div>
                     <span class="price">$18</span>
                 </div>
-
-                <div class="menu-item">
-                    <div>
-                        <span class="item-name">Res</span>
-                        <span class="item-desc">Carnaza, Aldilla</span>
-                    </div>
-                    <span class="price">$18</span>
-                </div>
-
-                <div class="menu-item">
-                    <span class="item-name">Lengua</span>
-                    <span class="price">$18</span>
-                </div>
-
-                <div class="menu-item">
-                    <span class="item-name">Asada</span>
-                    <span class="price">$20</span>
-                </div>
-
-                <div class="menu-item">
-                    <span class="item-name">Chorizo</span>
-                    <span class="price">$20</span>
-                </div>
-
-                <div class="menu-item">
-                    <span class="item-name">Labio</span>
-                    <span class="price">$20</span>
-                </div>
+                <div class="menu-item"><span class="item-name">Lengua</span><span class="price">$18</span></div>
+                <div class="menu-item"><span class="item-name">Asada</span><span class="price">$20</span></div>
+                <div class="menu-item"><span class="item-name">Chorizo</span><span class="price">$20</span></div>
+                <div class="menu-item"><span class="item-name">Labio</span><span class="price">$20</span></div>
             </section>
 
             <!-- ORDENES -->
@@ -635,24 +523,12 @@
                     <div class="menu-icon">🍽️</div>
                     <h3>Por órdenes</h3>
                 </div>
-
                 <div class="menu-item">
-                    <div>
-                        <span class="item-name">Media Orden</span>
-                        <span class="item-desc">
-                            Res, Asada, Adobada, Labio, Lengua y Chorizo
-                        </span>
-                    </div>
+                    <div><span class="item-name">Media Orden</span><span class="item-desc">Res, Asada, Adobada, Labio, Lengua y Chorizo</span></div>
                     <span class="price">$130</span>
                 </div>
-
                 <div class="menu-item">
-                    <div>
-                        <span class="item-name">Orden Completa</span>
-                        <span class="item-desc">
-                            Res, Asada, Adobada, Labio, Lengua y Chorizo
-                        </span>
-                    </div>
+                    <div><span class="item-name">Orden Completa</span><span class="item-desc">Res, Asada, Adobada, Labio, Lengua y Chorizo</span></div>
                     <span class="price">$200</span>
                 </div>
             </section>
@@ -663,23 +539,10 @@
                     <div class="menu-icon">🥤</div>
                     <h3>Bebidas</h3>
                 </div>
-
-                <div class="menu-item">
-                    <span class="item-name">Agua de Horchata (Litro)</span>
-                    <span class="price">$35</span>
-                </div>
-
-                <div class="menu-item">
-                    <span class="item-name">Agua de Horchata (Medio)</span>
-                    <span class="price">$22</span>
-                </div>
-
-                <div class="menu-item">
-                    <span class="item-name">Refrescos (600 ml)</span>
-                    <span class="price">$35</span>
-                </div>
+                <div class="menu-item"><span class="item-name">Agua de Horchata (Litro)</span><span class="price">$35</span></div>
+                <div class="menu-item"><span class="item-name">Agua de Horchata (Medio)</span><span class="price">$22</span></div>
+                <div class="menu-item"><span class="item-name">Refrescos (600 ml)</span><span class="price">$35</span></div>
             </section>
-
         </div>
 
         <div class="flavor-banner">
@@ -687,60 +550,47 @@
             <p>Ven por tus tacos favoritos y disfruta el auténtico sabor.</p>
         </div>
 
-
         <!-- PEDIDOS Y CÓMO LLEGAR -->
         <div class="quick-actions">
             <a class="action-btn whatsapp-btn" href="https://wa.me/523131495299?text=Hola%2C%20quiero%20hacer%20un%20pedido%20en%20Tacos%20Los%20Beto%27s" target="_blank" rel="noopener">
                 💬 Pedir por WhatsApp
             </a>
-            <a class="action-btn maps-btn" href="https://www.google.com/maps/dir/?api=1&destination=18.9091234,-103.8782114" target="_blank" rel="noopener">
-                📍 Cómo llegar
-            </a>
+            <a href="#locationTitle" class="action-btn maps-btn">📍 Cómo llegar</a>
+            <a class="action-btn services-btn" href="#servicios">🥑 Nuestros servicios</a>
         </div>
 
-        <!-- JUEGO -->
+        <!-- SERVICIOS Y ACOMPAÑAMIENTOS -->
+        <section class="services-card" id="servicios" aria-labelledby="servicesTitle">
+            <h2 id="servicesTitle">🥑 Nuestros servicios y acompañamientos</h2>
+            <p class="services-lead">¡A tus tacos no les puede faltar algo rico para acompañar!</p>
+            <div class="services-grid">
+                <div class="service-item"><span>🌶️</span> Salsa roja</div>
+                <div class="service-item"><span>🟢</span> Salsa verde</div>
+                <div class="service-item"><span>🥑</span> Salsa de aguacate</div>
+                <div class="service-item"><span>🌮</span> Doraditas</div>
+                <div class="service-item"><span>🧅</span> Cebollitas fritas</div>
+                <div class="service-item"><span>🫘</span> Frijolitos de la olla</div>
+            </div>
+            <div class="avocado-feature">🥑 ¡Y claro que no puede faltar el aguacate! Un toque especial de la casa. 🥑</div>
+        </section>
+
+        <!-- JUEGO MEJORADO -->
         <section class="extra-section game-card" aria-labelledby="gameTitle">
             <h3 id="gameTitle">🌮 ¡El Taconauta!</h3>
             <p class="game-intro">Ayuda al taquito a saltar los obstáculos y consigue la mayor puntuación.</p>
+            
             <div class="game-hud">
                 <span>Puntos: <strong id="gameScore">0</strong></span>
-                <span>Récord: <strong id="gameBest">0</strong></span>
+                <span>Mejor Récord: <strong id="gameBest">0</strong></span>
             </div>
-            <canvas id="tacoGame" width="720" height="230" aria-label="Juego del taquito: salta los obstáculos"></canvas>
+            
+            <canvas id="tacoGame" width="800" height="300" aria-label="Juego del taquito: salta los obstáculos"></canvas>
+            
             <div class="game-controls">
-                <button type="button" id="startGame">▶ Jugar / Reiniciar</button>
-                <button type="button" class="secondary" id="jumpGame">⬆ Saltar</button>
+                <button type="button" id="startGame">▶ Iniciar Aventura</button>
+                <button type="button" class="secondary" id="jumpGame">⬆ ¡Saltar!</button>
             </div>
-            <p class="game-help" id="gameMessage">Presiona «Jugar» y salta con ESPACIO, ↑ o tocando el botón.</p>
-        </section>
-
-        <!-- OPINIONES -->
-        <section class="extra-section feedback-card" aria-labelledby="feedbackTitle">
-            <h3 id="feedbackTitle">❤️ Tu opinión nos importa</h3>
-            <p>¿Cómo estuvo tu experiencia? Cuéntanos qué te gustó o qué podemos mejorar.</p>
-            <form class="feedback-form" id="feedbackForm">
-                <div>
-                    <label for="customerName">Tu nombre (opcional)</label>
-                    <input id="customerName" name="name" type="text" maxlength="60" placeholder="¿Cómo te llamas?">
-                </div>
-                <div>
-                    <label for="rating">¿Cómo calificas tus tacos?</label>
-                    <select id="rating" name="rating" required>
-                        <option value="">Selecciona una calificación</option>
-                        <option value="5/5 - ¡Excelente!">⭐⭐⭐⭐⭐ Excelente</option>
-                        <option value="4/5 - Muy bien">⭐⭐⭐⭐ Muy bien</option>
-                        <option value="3/5 - Bueno">⭐⭐⭐ Bueno</option>
-                        <option value="2/5 - Puede mejorar">⭐⭐ Puede mejorar</option>
-                        <option value="1/5 - No fue lo esperado">⭐ No fue lo esperado</option>
-                    </select>
-                </div>
-                <div>
-                    <label for="comments">Tu comentario o sugerencia</label>
-                    <textarea id="comments" name="comments" maxlength="1000" placeholder="Nos encantaría saber qué podemos mejorar..." required></textarea>
-                </div>
-                <button class="action-btn" type="submit">💬 Enviar opinión por WhatsApp</button>
-            </form>
-            <p class="feedback-note">Tu comentario se abrirá en WhatsApp para que puedas enviarlo directamente a la taquería.</p>
+            <p class="game-help" id="gameMessage">Toca el juego, usa ESPACIO, ↑ o el botón para saltar.</p>
         </section>
 
         <!-- UBICACIÓN -->
@@ -760,17 +610,13 @@
             </a>
         </section>
 
-
         <!-- HORARIOS -->
         <section class="hours">
             <h2>🕒 HORARIO DE ATENCIÓN</h2>
-
             <p>Martes a Domingo</p>
-
             <div class="schedule">
                 <strong>6:00 PM - 1:00 AM</strong>
             </div>
-
             <p class="closed">¡Los lunes descansamos!</p>
         </section>
 
@@ -778,30 +624,13 @@
 
     <footer>
         <p>© 2026 <strong>Tacos Los Beto's</strong>. Todos los derechos reservados.</p>
-        <p class="motto">🌮 El sabor que siempre se antoja. ❤️🤍💙</p>
+        <p class="motto">🌮 El sabor que siempre se antoja. 🥑🥑🥑</p>
     </footer>
-
 
     <a class="floating-whatsapp" href="https://wa.me/523131495299?text=Hola%2C%20Tacos%20Los%20Beto%27s" target="_blank" rel="noopener" aria-label="Contactar por WhatsApp" title="Pide por WhatsApp">☏</a>
 
-
     <script>
-    // Opiniones: prepara el mensaje y lo abre en WhatsApp.
-    const feedbackForm = document.getElementById('feedbackForm');
-    feedbackForm.addEventListener('submit', function (event) {
-        event.preventDefault();
-        const name = document.getElementById('customerName').value.trim() || 'Cliente';
-        const rating = document.getElementById('rating').value;
-        const comments = document.getElementById('comments').value.trim();
-        if (!rating || !comments) {
-            alert('Por favor selecciona una calificación y escribe tu comentario.');
-            return;
-        }
-        const message = `Hola, Tacos Los Beto's. Quiero compartir mi opinión:\\nNombre: ${name}\\nCalificación: ${rating}\\nComentario: ${comments}`;
-        window.open(`https://wa.me/523131495299?text=${encodeURIComponent(message)}`, '_blank', 'noopener');
-    });
-
-    // Mini juego: el taquito salta obstáculos.
+    // JS DEL JUEGO MEJORADO
     (() => {
         const canvas = document.getElementById('tacoGame');
         const ctx = canvas.getContext('2d');
@@ -811,135 +640,288 @@
         const startBtn = document.getElementById('startGame');
         const jumpBtn = document.getElementById('jumpGame');
 
-        let running = false;
-        let gameOver = false;
+        // Estado del juego
+        let state = 'START'; 
         let score = 0;
-        let best = 0;
+        let best = localStorage.getItem('taconautaBest') || 0; 
         let frame = 0;
-        let tacoY = 164;
-        let velocity = 0;
-        let obstacles = [];
-        const ground = 190;
-        const tacoX = 75;
+        let speedMult = 1;
+        let nextSpawn = 0;
 
-        function draw() {
-            ctx.clearRect(0, 0, canvas.width, canvas.height);
-            // Sol y nubes
-            ctx.fillStyle = '#ffe8bd';
-            ctx.beginPath(); ctx.arc(630, 48, 23, 0, Math.PI * 2); ctx.fill();
-            ctx.fillStyle = 'rgba(255,255,255,.65)';
-            ctx.beginPath(); ctx.arc(145, 48, 18, 0, Math.PI * 2); ctx.fill();
-            ctx.beginPath(); ctx.arc(164, 43, 23, 0, Math.PI * 2); ctx.fill();
-            // Piso
-            ctx.fillStyle = '#8a512b';
-            ctx.fillRect(0, ground, canvas.width, 40);
-            ctx.fillStyle = '#c58a4e';
-            ctx.fillRect(0, ground, canvas.width, 5);
-            for (let x = -((frame * 5) % 45); x < canvas.width; x += 45) {
-                ctx.fillStyle = 'rgba(255,230,190,.35)';
-                ctx.fillRect(x, ground + 17, 22, 3);
-            }
-            // Obstáculos
-            obstacles.forEach(o => {
-                ctx.font = '30px sans-serif';
-                ctx.fillText(o.emoji, o.x, ground - 2);
+        bestEl.textContent = best;
+
+        // Físicas del Taquito
+        const taco = {
+            x: 120, y: 220, dy: 0, gravity: 0.8, jumpForce: -14.5,
+            grounded: true, rotation: 0
+        };
+
+        const groundY = 240;
+        let obstacles = [];
+        
+        // Elementos visuales del fondo (Parallax)
+        let clouds = [
+            { x: 100, y: 60, speed: 0.4, scale: 1 },
+            { x: 400, y: 90, speed: 0.25, scale: 0.8 },
+            { x: 700, y: 50, speed: 0.6, scale: 1.2 }
+        ];
+
+        function drawBackground() {
+            // Cielo Degradado
+            let grad = ctx.createLinearGradient(0, 0, 0, groundY);
+            grad.addColorStop(0, '#f2b96c');
+            grad.addColorStop(1, '#fae0b8');
+            ctx.fillStyle = grad;
+            ctx.fillRect(0, 0, canvas.width, canvas.height);
+
+            // Sol
+            ctx.globalAlpha = 1; 
+            ctx.fillStyle = '#ffcf54';
+            ctx.beginPath();
+            ctx.arc(700, 70, 45, 0, Math.PI * 2);
+            ctx.fill();
+
+            // Nubes
+            ctx.fillStyle = 'rgba(255, 255, 255, 0.75)';
+            clouds.forEach(c => {
+                ctx.beginPath();
+                ctx.arc(c.x, c.y, 25 * c.scale, 0, Math.PI*2);
+                ctx.arc(c.x + 30 * c.scale, c.y - 15 * c.scale, 35 * c.scale, 0, Math.PI*2);
+                ctx.arc(c.x + 60 * c.scale, c.y, 25 * c.scale, 0, Math.PI*2);
+                ctx.fill();
+                if (state === 'PLAYING') c.x -= c.speed;
+                if (c.x < -150) c.x = canvas.width + 50;
             });
-            // Taquito
-            ctx.font = '42px sans-serif';
-            ctx.fillText('🌮', tacoX, tacoY + 25);
-            if (!running && !gameOver) {
-                ctx.fillStyle = '#59331b';
-                ctx.font = 'bold 19px Poppins, sans-serif';
-                ctx.textAlign = 'center';
-                ctx.fillText('¡Listo para correr por unos tacos!', canvas.width / 2, 112);
-                ctx.textAlign = 'left';
+
+            // Montañas al fondo
+            ctx.fillStyle = '#d49b5f';
+            ctx.beginPath();
+            ctx.moveTo(0, groundY);
+            ctx.quadraticCurveTo(200, groundY - 50, 400, groundY);
+            ctx.quadraticCurveTo(600, groundY - 70, 800, groundY);
+            ctx.lineTo(800, canvas.height);
+            ctx.lineTo(0, canvas.height);
+            ctx.fill();
+
+            // Suelo Principal
+            ctx.fillStyle = '#8a512b';
+            ctx.fillRect(0, groundY, canvas.width, canvas.height - groundY);
+            ctx.fillStyle = '#c58a4e';
+            ctx.fillRect(0, groundY, canvas.width, 8);
+
+            // Líneas de velocidad en el suelo
+            if (state === 'PLAYING') {
+                ctx.fillStyle = 'rgba(255, 230, 190, 0.3)';
+                let offset = (frame * 7 * speedMult) % 70;
+                for (let x = -offset; x < canvas.width; x += 70) {
+                    ctx.fillRect(x, groundY + 18, 35, 4);
+                    ctx.fillRect(x + 20, groundY + 38, 20, 3);
+                }
             }
-            if (gameOver) {
-                ctx.fillStyle = 'rgba(30,15,8,.72)';
-                ctx.fillRect(0, 0, canvas.width, canvas.height);
-                ctx.fillStyle = '#fff4df';
+        }
+
+        function drawTaco() {
+            ctx.save();
+            // Restauramos la opacidad y color base para que no herede la transparencia del suelo
+            ctx.globalAlpha = 1;
+            ctx.fillStyle = '#000000'; 
+            
+            ctx.translate(taco.x, taco.y);
+            
+            // Efecto de rotación al saltar
+            if (!taco.grounded) {
+                taco.rotation += 0.08;
+            } else {
+                taco.rotation = 0;
+            }
+            ctx.rotate(taco.rotation);
+
+            // Sombra en el suelo (solo cuando toca el suelo)
+            if (taco.grounded) {
+                ctx.fillStyle = 'rgba(0,0,0,0.2)';
+                ctx.beginPath();
+                ctx.ellipse(0, 20, 22, 6, 0, 0, Math.PI*2);
+                ctx.fill();
+            }
+
+            // Sombra para que resalte el emoji
+            ctx.shadowColor = 'rgba(0, 0, 0, 0.5)';
+            ctx.shadowBlur = 6;
+            ctx.shadowOffsetX = 2;
+            ctx.shadowOffsetY = 3;
+
+            ctx.font = '55px sans-serif';
+            ctx.textAlign = 'center';
+            ctx.textBaseline = 'middle';
+            ctx.fillText('🌮', 0, 0);
+            ctx.restore();
+        }
+
+        function drawObstacles() {
+            ctx.save();
+            // Restauramos colores y opacidad
+            ctx.globalAlpha = 1;
+            ctx.fillStyle = '#000000';
+            
+            // Sombra para los obstáculos para que resalten
+            ctx.shadowColor = 'rgba(0, 0, 0, 0.5)';
+            ctx.shadowBlur = 6;
+            ctx.shadowOffsetX = 2;
+            ctx.shadowOffsetY = 3;
+
+            obstacles.forEach(o => {
+                ctx.font = '48px sans-serif';
                 ctx.textAlign = 'center';
-                ctx.font = 'bold 30px Poppins, sans-serif';
-                ctx.fillText('¡Fin del juego!', canvas.width / 2, 98);
-                ctx.font = '18px Poppins, sans-serif';
-                ctx.fillText('Puntuación: ' + score + ' · ¡Inténtalo otra vez!', canvas.width / 2, 132);
-                ctx.textAlign = 'left';
+                ctx.textBaseline = 'bottom';
+                ctx.fillText(o.emoji, o.x, groundY + 8);
+            });
+            ctx.restore();
+        }
+
+        function drawUI() {
+            if (state === 'START') {
+                ctx.fillStyle = 'rgba(0,0,0,0.5)';
+                ctx.fillRect(0, 0, canvas.width, canvas.height);
+                ctx.fillStyle = '#fff';
+                ctx.textAlign = 'center';
+                ctx.font = 'bold 40px Poppins, sans-serif';
+                ctx.fillText('¡EL TACONAUTA!', canvas.width/2, canvas.height/2 - 15);
+                ctx.font = '20px Poppins, sans-serif';
+                ctx.fillStyle = '#f9d9a2';
+                ctx.fillText('Toca para empezar a correr', canvas.width/2, canvas.height/2 + 30);
+            } else if (state === 'GAMEOVER') {
+                ctx.fillStyle = 'rgba(138, 43, 34, 0.75)';
+                ctx.fillRect(0, 0, canvas.width, canvas.height);
+                ctx.fillStyle = '#fff';
+                ctx.textAlign = 'center';
+                ctx.font = 'bold 46px Poppins, sans-serif';
+                ctx.fillText('¡AY, PICÓ!', canvas.width/2, canvas.height/2 - 20);
+                ctx.font = '22px Poppins, sans-serif';
+                ctx.fillStyle = '#ffc928';
+                ctx.fillText(`Puntos: ${score}  |  Récord: ${best}`, canvas.width/2, canvas.height/2 + 30);
             }
         }
 
         function jump() {
-            if (!running) {
-                if (gameOver) startGame();
-                else return;
+            if (state === 'START' || state === 'GAMEOVER') {
+                startGame();
+                return;
             }
-            if (tacoY >= 164) velocity = -12;
+            if (taco.grounded) {
+                taco.dy = taco.jumpForce;
+                taco.grounded = false;
+            }
         }
 
         function startGame() {
-            running = true;
-            gameOver = false;
+            state = 'PLAYING';
             score = 0;
             frame = 0;
-            tacoY = 164;
-            velocity = 0;
+            speedMult = 1;
+            taco.y = groundY - 25;
+            taco.dy = 0;
+            taco.grounded = true;
             obstacles = [];
+            nextSpawn = 60; 
+            
             scoreEl.textContent = '0';
-            messageEl.textContent = '¡Dale! Salta los obstáculos.';
-            draw();
+            messageEl.textContent = '¡Salta con ritmo para no quemarte!';
+            startBtn.textContent = '⏸ Pausa / Reiniciar';
         }
 
         function endGame() {
-            running = false;
-            gameOver = true;
-            if (score > best) best = score;
+            state = 'GAMEOVER';
+            if (score > best) {
+                best = score;
+                localStorage.setItem('taconautaBest', best); 
+            }
             bestEl.textContent = best;
-            messageEl.textContent = '¡Buen intento! Presiona «Jugar / Reiniciar» para otra partida.';
-            draw();
+            messageEl.textContent = '¡Uff, te enchilaste! Presiona Saltar para otra ronda.';
+            startBtn.textContent = '▶ Volver a jugar';
+        }
+
+        function update() {
+            if (state !== 'PLAYING') return;
+            frame++;
+            
+            speedMult = 1 + Math.min(score / 400, 1.2); 
+
+            // Gravedad y Salto
+            taco.dy += taco.gravity;
+            taco.y += taco.dy;
+
+            // Límite del suelo
+            if (taco.y >= groundY - 25) {
+                taco.y = groundY - 25;
+                taco.dy = 0;
+                taco.grounded = true;
+            }
+
+            // Generar Obstáculos 
+            if (frame >= nextSpawn) {
+                const emojis = ['🌶️', '🧅', '🌵', '🔥'];
+                const tipo = emojis[Math.floor(Math.random() * emojis.length)];
+                obstacles.push({ x: canvas.width + 40, emoji: tipo });
+                
+                let randVariacion = Math.floor(Math.random() * 45);
+                let baseEspacio = 65 / speedMult;
+                nextSpawn = frame + baseEspacio + randVariacion;
+            }
+
+            // Mover y verificar colisiones
+            for (let i = obstacles.length - 1; i >= 0; i--) {
+                let o = obstacles[i];
+                o.x -= 7.5 * speedMult;
+
+                let dx = o.x - taco.x;
+                let dy = (groundY - 15) - taco.y;
+                let distancia = Math.sqrt(dx * dx + dy * dy);
+
+                if (distancia < 38) {
+                    endGame();
+                }
+
+                if (o.x < -60) obstacles.splice(i, 1); 
+            }
+
+            // Puntuación
+            if (frame % 6 === 0) {
+                score++;
+                scoreEl.textContent = score;
+            }
         }
 
         function loop() {
-            if (running) {
-                frame++;
-                velocity += 0.62;
-                tacoY += velocity;
-                if (tacoY > 164) { tacoY = 164; velocity = 0; }
-
-                if (frame % 82 === 0) {
-                    obstacles.push({ x: canvas.width + 10, emoji: Math.random() > .5 ? '🌶️' : '🧅' });
-                }
-                obstacles.forEach(o => o.x -= 5 + Math.min(score / 12, 4));
-                obstacles = obstacles.filter(o => o.x > -40);
-
-                // Colisión aproximada entre el taquito y el obstáculo.
-                for (const o of obstacles) {
-                    if (o.x < tacoX + 35 && o.x > tacoX - 20 && tacoY > 125) {
-                        endGame();
-                        break;
-                    }
-                }
-                if (running) {
-                    if (frame % 6 === 0) {
-                        score++;
-                        scoreEl.textContent = score;
-                    }
-                    draw();
-                }
-            }
+            drawBackground();
+            if (state === 'PLAYING') update();
+            drawObstacles();
+            drawTaco();
+            drawUI();
             requestAnimationFrame(loop);
         }
 
-        startBtn.addEventListener('click', startGame);
+        // Eventos de controles
+        startBtn.addEventListener('click', () => {
+            if (state === 'PLAYING') {
+                state = 'START'; 
+                startBtn.textContent = '▶ Continuar';
+            } else {
+                startGame();
+            }
+        });
+        
         jumpBtn.addEventListener('click', jump);
-        canvas.addEventListener('pointerdown', jump);
+        canvas.addEventListener('pointerdown', (e) => { e.preventDefault(); jump(); });
+        
         document.addEventListener('keydown', event => {
             if (event.code === 'Space' || event.code === 'ArrowUp') {
                 if (document.activeElement === document.body) event.preventDefault();
                 jump();
             }
         });
-        bestEl.textContent = best;
-        draw();
-        requestAnimationFrame(loop);
+
+        // Iniciar bucle
+        loop();
     })();
     </script>
 
